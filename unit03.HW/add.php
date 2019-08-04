@@ -1,6 +1,4 @@
-<?php 
-  session_start();
- ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,33 +31,35 @@
   <form class="container" method="POST" action="add_process.php">
     <div class="form-group">
       <label for="exampleInputEmail1">Mã sinh viên</label>
-      <input type="text" class="form-control" name="maSV" placeholder="Mã sinh viên">
+      <input type="text" class="form-control" name="maSV"  placeholder="Mã sinh viên">
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Họ và tên</label>
-      <input type="text" class="form-control" name="tenSV" placeholder="Họ và tên">
+      <input type="text" class="form-control" name="tenSV"  placeholder="Họ và tên">
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Số điện thoại</label>
-      <input type="text" class="form-control" name="sdt" placeholder="Số điện thoại">
+      <input type="text" class="form-control" name="sdt"  placeholder="Số điện thoại">
     </div>
     <div class="form-group">
       <label for="formGroupExampleInput">Email</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" name="email" placeholder="Email">
+      <input type="text" class="form-control" name="email" placeholder="Email">
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Giới tính</label><br>
-      <label><input class="gioitinh"  type="radio" name="gt" value="Nam"><span>Nam</span></label> &nbsp;
+      <label><input class="gioitinh"  type="radio" name="gt" value="Nam" checked="checked"><span>Nam</span></label> &nbsp;
       <label><input class="gioitinh" type="radio" name="gt" value="Nữ"><span>Nữ</span></label> &nbsp;
       <label><input class="gioitinh" type="radio" name="gt" value="Khác"><span>Khác</span></label> &nbsp;
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Địa chỉ</label>
-      <input type="text" class="form-control" name="diaChi" placeholder="Địa chỉ">
+      <input type="text" class="form-control" name="diaChi" id="diaChi" placeholder="Địa chỉ">
     </div>
     
     
     <button type="submit" class="btn btn-primary" name="save">Lưu sinh viên</button>
+    <button type="reset" class="btn btn-primary" name="save">Xóa tất cả</button>
+
   </form>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
