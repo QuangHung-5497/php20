@@ -8,7 +8,7 @@
  	<title>Student</title>
  </head>
  <body>
- 	<h1>thông tin sinh viên</h1>
+ 	<h1>Thông tin sinh viên</h1>
  	<ul>
  		<li>
  			Họ và tên: <b><?=$_SESSION['students']['sv'.$_GET['maSV']]['tenSV']?></b>
@@ -25,6 +25,9 @@
  		</li>
  		<li>
  			Email: <b><?=$_SESSION['students']['sv'.$_GET['maSV']]['email']?></b>
+ 		</li>
+ 		<li>
+ 			Địa chỉ: <b><?=$_SESSION['students']['sv'.$_GET['maSV']]['diaChi']?></b>
  		</li>
  	</ul>
 
