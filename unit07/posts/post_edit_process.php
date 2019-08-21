@@ -1,6 +1,6 @@
 <?php 	
 	require_once("connect.php");
-	$data = $_POST;
+	   $data = $_POST;
         $target_dir = "images/";  
 
         $target_file = $target_dir . basename($_FILES["thumbnail"]["name"]); 
